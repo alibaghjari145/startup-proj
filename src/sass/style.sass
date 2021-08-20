@@ -1,0 +1,197 @@
+
+$first-color: #00d7ff
+$second-color: #313896
+$third-color: #9f32b2
+*
+    direction: rtl
+body
+    overflow-x: hidden
+.headerMenu
+    display: grid
+    grid-template-columns: 15% 30% 35% 15%
+    height: 10vh
+    box-shadow: 0 0 1vh rgba($second-color,.2)
+    padding: 0 5vw
+    align-items: center
+    background-color: $second-color
+    color: white
+    position: sticky
+    width: 100vw
+    position: fixed
+    top: 0
+    input
+        height: 5vh
+        border-radius: 2.5vh
+        width: 80%
+        border: none
+        outline: none
+        box-shadow: 0 0 1vh rgba($second-color,.2)
+        padding: 0 2vw
+        font-size: large
+        color: $second-color
+    input::placeholder
+        color: $second-color
+        font-size: large
+    ul
+        display: grid
+        grid-template-columns: 25% 25% 25% 25%
+        list-style-type: none
+    img
+        height: 7.5vh
+    li,.headerSpan
+        font-size: large
+        transition: .3s
+    li:hover,.headerSpan:hover
+        cursor: pointer
+        color: yellow
+    svg
+        color: $second-color
+        position: absolute
+        right: 79vw
+        cursor: pointer
+
+//header styling
+.header
+    height: 70vh
+    display: grid
+    grid-template-columns: 40% 60%
+    margin-bottom: 20vh
+    img
+        width: 100%
+        float: left
+    div
+        padding: 30vh 3vw 0 0
+        text-align: center
+        width: 35vw
+        h1
+            color: $second-color
+        .headerBtn
+            width: 15vw
+            height: 8vh
+            font-size: large
+            color: white
+            border: none
+            outline: none
+            background-color: $second-color
+            border-radius: 4vh
+            transition: .3s
+        .headerBtn:hover
+            cursor: pointer
+            background-color: $third-color
+
+.featureContainer
+    padding-top: 5vh
+    display: flex
+    justify-content: space-evenly
+    padding-bottom: 5vh
+
+.featureBox
+    width: 20vw
+    height: 15vw
+    box-shadow: 0 0 3vh rgba($second-color,.2)
+    border-radius: 1vw
+    text-align: center
+    display: grid
+    grid-template-rows: 25% 12.5% 30% 20%
+    h2
+        font-size: 2.5vw
+        color: $second-color
+    h4
+        font-size: 1.5vw
+
+.featureIcon
+    font-size: 3vw
+    color: $third-color
+
+//footer styling
+.footer
+    height: 50vh
+    width: 100vw
+    display: grid
+    grid-template-rows: 75% 25%
+    background-color: $second-color
+    color: white
+    .footerOption
+        width: 80vw
+        margin-right: 5vw
+        border-bottom: 3px white solid
+        display: grid
+        grid-template-columns: 25% 25% 25% 25%
+        ul
+            height: 40vh
+            padding-top: 5vh
+        li:first-child
+            font-size: 2vw
+            height: 20%
+        li
+            list-style-type: none
+            height: 12%
+        li:hover
+            cursor: pointer
+    .footerText
+        height: 10vh
+        align-items: center
+        padding-right: 5vw
+        display: grid
+        grid-template-columns: 15% 85%
+        img
+            height: 8vh
+
+.offerscontainer
+    padding: 5vh 0
+
+.categoryTitle
+    width: 30vh
+    height: 8vh
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    color: white
+    border-radius: 1vh
+    font-size: large
+    background-color: $second-color
+
+.whichPage
+    width: 25vw
+    margin: 0 auto 5vh auto
+    text-align: center
+    font-size: 3vw
+    color: $second-color
+    svg
+        margin: 0 1vw
+    svg:hover
+        cursor: pointer
+
+.offerBox
+    width: 35vh
+    height: 30vh
+    margin: 3vh 0
+    padding: 2vh
+    border-radius: 1.5vh
+    box-shadow: 0 0 3vh rgba($second-color ,.2 )
+    display: grid
+    text-align: center
+    grid-template-rows: 30% 15% 25% 30%
+    img
+        width: 10vh
+        height: 10vh
+        border-radius: 7vh
+        margin: auto 
+        border: .5vh solid $first-color
+    button
+        width: 30vh
+        margin: auto
+        height: 7vh
+        border-radius: 1vh
+        outline: none
+        border: none
+        font-size: large
+        background-color: $first-color
+
+
+
+
+.offers
+    display: flex
+    justify-content: space-evenly
